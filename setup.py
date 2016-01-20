@@ -10,6 +10,11 @@ requires = [
 tests_require = [
 ]
 
+points = {
+    'pytest11': [
+        "webtest = pytest_webtest.plugin",
+    ],
+}
 
 setup(
     name="pytest-webtest",
@@ -18,4 +23,5 @@ setup(
     extras_require={
         "testing": tests_require,
     },
+    entry_points=points,
 )
